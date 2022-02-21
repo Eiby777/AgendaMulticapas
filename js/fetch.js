@@ -35,9 +35,10 @@ function Enviar(){
 		'Content-Type': 'application/json'
   	}
 	}).then(res => res.json())
-	.catch(error => console.error('Error:', error)).then(response => console.log('Success:', response));
+	.catch(error => console.error('Error:', error))
+	.then(response => console.log('Success:', response));
 
-	setTimeout(CargarPágina,3000)
+	setTimeout(CargarPágina,4000)
 	
 }
 
